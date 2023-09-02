@@ -1,0 +1,72 @@
+[
+  {
+    "question": "What is the primary purpose of functions in programming?",
+    "options": ["To define variables", "To perform mathematical operations", "To encapsulate a block of code that performs a specific task", "To create loops"],
+    "answer": "To encapsulate a block of code that performs a specific task"
+  },
+  {
+    "question": "What is a parameter in a function?",
+    "options": ["The name of the function", "The value returned by the function", "An input value provided when calling the function", "The result of a function"],
+    "answer": "An input value provided when calling the function"
+  },
+  {
+    "question": "How is a function declared in JavaScript?",
+    "options": ["function myFunction() { ... }", "def function myFunction() { ... }", "function = myFunction() { ... }", "declare function myFunction() { ... }"],
+    "answer": "function myFunction() { ... }"
+  },
+  {
+    "question": "Which keyword is used to return a value from a function in JavaScript?",
+    "options": ["return", "result", "output", "value"],
+    "answer": "return"
+  },
+  {
+    "question": "What does function scope refer to?",
+    "options": ["The range of parameters a function can accept", "The accessibility of variables declared within a function", "The visibility of variables outside the function", "The number of functions within a program"],
+    "answer": "The accessibility of variables declared within a function"
+  },
+  {
+    "question": "Which of the following built-in JavaScript functions converts a string to uppercase?",
+    "options": ["stringToUpper()", "toUpperCase()", "convertCase(upper)", "upperCaseString()"],
+    "answer": "toUpperCase()"
+  },
+  {
+    "question": "What does the `this` keyword refer to inside a function?",
+    "options": ["The function itself", "The global object", "The parent object of the function", "The arguments passed to the function"],
+    "answer": "The parent object of the function"
+  },
+  {
+    "question": "What is a callback function?",
+    "options": ["A function that calls another function", "A function passed as an argument to another function", "A function that returns a value", "A function used for mathematical calculations"],
+    "answer": "A function passed as an argument to another function"
+  },
+  {
+    "question": "What is the purpose of the `arguments` object in a function?",
+    "options": ["To store the result of the function", "To provide default values for parameters", "To access the parameters passed to the function", "To define new variables within the function"],
+    "answer": "To access the parameters passed to the function"
+  },
+  {
+    "question": "Which method is used to call a function after a specified time interval?",
+    "options": ["invokeTimeout()", "setInterval()", "callAfter()", "executeAfter()"],
+    "answer": "setInterval()"
+  },
+  {
+    "question": "What does the `apply` method do on a function?",
+    "options": ["Calls the function with a specified this value and arguments provided as an array", "Executes the function immediately", "Applies a function to each element of an array", "Applies a function to the arguments passed"],
+    "answer": "Calls the function with a specified this value and arguments provided as an array"
+  },
+  {
+    "question": "What is the purpose of the `bind` method on functions?",
+    "options": ["Binds a function to an event listener", "Creates a new function with a specific context and parameters", "Binds a function to the global scope", "Binds a function to an object's prototype"],
+    "answer": "Creates a new function with a specific context and parameters"
+  },
+  {
+    "question": "What does the `call` method do on a function?",
+    "options": ["Calls the function immediately", "Calls a function after a delay", "Calls a function with a specified this value and arguments", "Calls a function with the parameters passed"],
+    "answer": "Calls a function with a specified this value and arguments"
+  },
+  {
+    "question": "What are arrow functions in JavaScript?",
+    "options": ["Functions that perform complex mathematical calculations", "Functions used for asynchronous programming", "Functions declared using the `function` keyword", "Concise functions with a simplified syntax for writing functions"],
+    "answer": "Concise functions with a simplified syntax for writing functions"
+  }
+]

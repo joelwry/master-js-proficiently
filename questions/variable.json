@@ -1,0 +1,57 @@
+[
+  {
+    "question": "What are variables used for in JavaScript?",
+    "options": [
+      "To store and manipulate data",
+      "To create HTML elements",
+      "To style web pages",
+      "To display error messages"
+    ],
+    "answer": "To store and manipulate data"
+  },
+  {
+    "question": "How is a variable declared in JavaScript?",
+    "options": [
+      "declare variableName;",
+      "variableName = value;",
+      "variableName value;",
+      "let variableName = value;"
+    ],
+    "answer": "let variableName = value;"
+  },
+  {
+    "question": "What is the value of 'x' after the following code?\n\nlet x;\nx = 10;",
+    "options": ["10", "undefined", "0", "x"],
+    "answer": "10"
+  },
+  {
+    "question": "Which method converts a string to uppercase?",
+    "options": ["toUpperCase()", "toLowerCase()", "convertCase()", "caseUpper()"],
+    "answer": "toUpperCase()"
+  },
+  {
+    "question": "What does the 'length' method return for the string 'Hello, World!'?",
+    "options": ["5", "12", "13", "11"],
+    "answer": "13"
+  },
+  {
+    "question": "How is the character 'r' obtained from the string 'Hello' using the 'charAt()' method?",
+    "options": ["message.charAt(0)", "message.charAt(2)", "message.charAt(3)", "message.charAt(1)"],
+    "answer": "message.charAt(2)"
+  },
+  {
+    "question": "Which method is used to extract a portion of a string based on specified indices?",
+    "options": ["subString()", "slice()", "extract()", "substring()"],
+    "answer": "substring()"
+  },
+  {
+    "question": "What is the result of the following code?\n\nlet pi = 3.14159;\nlet formattedPi = pi.toFixed(2);",
+    "options": ["3.14", "3.141", "3.1415", "3.14159"],
+    "answer": "3.14"
+  },
+  {
+    "question": "Which method converts a number to a string?",
+    "options": ["number.toString()", "str(number)","toString.Number","stringify(number)"],
+    "answer": "3.14"
+  }
+]

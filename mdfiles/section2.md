@@ -1,0 +1,3 @@
+## Section 2: JavaScript Variables & Operators
+
+Building upon the introduction, you will be diving a bit into variables properly. You would be able to create variables to store any type of data type in your application. You will learn about operators, expressions. You would be able to know which operators works with a particular data type and what type of data type the operator will return. This knowledge forms the backbone of any JavaScript application and will prepare you for more advanced topics.

@@ -1,0 +1,52 @@
+[
+  {
+    "question": "What is the main difference between 'let' and 'var' for variable declarations?",
+    "options": ["'let' respects block scope, while 'var' does not", "'var' respects block scope, while 'let' does not", "'let' allows redeclaration, while 'var' does not", "'var' allows reassignment, while 'let' does not"],
+    "answer": "'let' respects block scope, while 'var' does not"
+  },
+  {
+    "question": "What does the 'const' keyword indicate for variable declarations?",
+    "options": ["The variable can't be changed after assignment", "The variable must be declared with 'let'", "The variable can only be assigned numbers", "The variable can't be accessed in the global scope"],
+    "answer": "The variable can't be changed after assignment"
+  },
+  {
+    "question": "Which syntax is used to create arrow functions in ES6?",
+    "options": ["(a, b) => a + b", "function add(a, b) { return a + b; }", "add(a, b) => { return a + b; }", "add(a, b) { return a + b; }"],
+    "answer": "(a, b) => a + b"
+  },
+  {
+    "question": "What is the purpose of template literals in JavaScript?",
+    "options": ["To define multi-line strings", "To create anonymous functions", "To concatenate strings", "To declare constants"],
+    "answer": "To define multi-line strings"
+  },
+  {
+    "question": "What does destructuring assignments allow you to do?",
+    "options": ["Extract values from arrays or objects into variables", "Combine multiple arrays into one", "Create arrays from single variables", "Concatenate strings"],
+    "answer": "Extract values from arrays or objects into variables"
+  },
+  {
+    "question": "What does the spread operator do?",
+    "options": ["Expands an array or object into individual elements", "Joins two arrays into one", "Converts strings into arrays", "Multiplies all elements in an array"],
+    "answer": "Expands an array or object into individual elements"
+  },
+  {
+    "question": "What is the purpose of the rest operator?",
+    "options": ["Gathers multiple elements into an array", "Removes the first element from an array", "Slices an array into smaller parts", "Converts an array into a string"],
+    "answer": "Gathers multiple elements into an array"
+  },
+  {
+    "question": "How do classes simplify object creation in JavaScript?",
+    "options": ["By providing a structured way to create objects", "By automating the process of inheritance", "By eliminating the need for functions", "By enforcing global scope for variables"],
+    "answer": "By providing a structured way to create objects"
+  },
+  {
+    "question": "Which modern JavaScript feature allows functions to retain access to outer variables?",
+    "options": ["Classes", "Destructuring assignments", "Arrow functions", "Block scope"],
+    "answer": "Arrow functions"
+  },
+  {
+    "question": "What does the 'constructor' method do in a class?",
+    "options": ["It constructs a new object from the class", "It initializes properties of the class", "It returns the class definition", "It adds methods to the class"],
+    "answer": "It constructs a new object from the class"
+  }
+]

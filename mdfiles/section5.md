@@ -1,0 +1,3 @@
+## Section 5: Strings, Math, and Dates
+
+Strings, math operations, and date manipulation are vital aspects of programming. In this section, you will learn how to manipulate strings, perform mathematical calculations, and work with dates and times effectively. Not only are we stopping here, we would then dive into using regular expression which is a vital skill when coming up with custom validation, search pattern in your application. These skills are crucial for tasks ranging from data processing to building dynamic user interfaces.

@@ -1,0 +1,52 @@
+[
+  {
+    "question": "Which method is used to create a new Date object with the current date and time?",
+    "options": ["new Date()", "Date.create()", "createDate()", "Date.now()"],
+    "answer": "new Date()"
+  },
+  {
+    "question": "What does the `getFullYear()` method return?",
+    "options": ["Year as a four-digit number", "Month of the year", "Day of the month", "Hour of the day"],
+    "answer": "Year as a four-digit number"
+  },
+  {
+    "question": "Which method is used to retrieve the month of the year (0-11) from a Date object?",
+    "options": ["getMonth()", "getYear()", "getDay()", "getMonthOfYear()"],
+    "answer": "getMonth()"
+  },
+  {
+    "question": "What does the `toDateString()` method return?",
+    "options": ["Date as a full text", "Date as a localized string", "Date as a short text", "Date as a timestamp"],
+    "answer": "Date as a full text"
+  },
+  {
+    "question": "Which method sets the day of the month for a Date object?",
+    "options": ["setDay()", "setDate()", "setMonth()", "setYear()"],
+    "answer": "setDate()"
+  },
+  {
+    "question": "What does the `getTime()` method return?",
+    "options": ["Time in seconds", "Time in milliseconds since January 1, 1970", "Time in minutes", "Time in hours"],
+    "answer": "Time in milliseconds since January 1, 1970"
+  },
+  {
+    "question": "Which method is used to format a Date object to a localized date string?",
+    "options": ["formatLocalizedDate()", "toLocaleDateString()", "formatDate()", "localizedDateString()"],
+    "answer": "toLocaleDateString()"
+  },
+  {
+    "question": "What is the purpose of the `getTimezoneOffset()` method?",
+    "options": ["Calculates the time difference between two time zones", "Returns the current time zone", "Returns the time zone offset in minutes", "Converts time from UTC to local time"],
+    "answer": "Returns the time zone offset in minutes"
+  },
+  {
+    "question": "Which method sets the hour of the time for a Date object?",
+    "options": ["setTime()", "setHour()", "setHours()", "setMinute()"],
+    "answer": "setHours()"
+  },
+  {
+    "question": "What does the `getMinutes()` method return?",
+    "options": ["Minutes of the day", "Minutes of the hour", "Minutes since January 1, 1970", "Minutes since midnight"],
+    "answer": "Minutes of the hour"
+  }
+]

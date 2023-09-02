@@ -1,0 +1,52 @@
+[
+  {
+    "question": "What property returns the number of characters in a string?",
+    "options": ["length", "count", "size", "chars"],
+    "answer": "length"
+  },
+  {
+    "question": "Which method is used to retrieve the character at a specified index in a string?",
+    "options": ["charAt", "getChar", "retrieveChar", "charAtIndex"],
+    "answer": "charAt"
+  },
+  {
+    "question": "What does the `concat` method do?",
+    "options": ["Splits a string into an array", "Joins two or more strings", "Replaces characters in a string", "Converts a string to uppercase"],
+    "answer": "Joins two or more strings"
+  },
+  {
+    "question": "Which method is used to find the index of the first occurrence of a substring in a string?",
+    "options": ["findIndex", "searchIndex", "indexOf", "firstIndexOf"],
+    "answer": "indexOf"
+  },
+  {
+    "question": "What is the purpose of the `toUpperCase` method?",
+    "options": ["Converts a string to lowercase", "Converts a string to uppercase", "Counts the number of characters", "Removes whitespace from a string"],
+    "answer": "Converts a string to uppercase"
+  },
+  {
+    "question": "What does the `trim` method do?",
+    "options": ["Adds whitespace to the beginning and end of a string", "Removes whitespace from the beginning and end of a string", "Splits a string into an array", "Replaces characters in a string"],
+    "answer": "Removes whitespace from the beginning and end of a string"
+  },
+  {
+    "question": "Which method is used to split a string into an array of substrings based on a delimiter?",
+    "options": ["divide", "break", "split", "slice"],
+    "answer": "split"
+  },
+  {
+    "question": "What does the `replace` method do?",
+    "options": ["Removes characters from a string", "Adds characters to a string", "Replaces occurrences of a substring with a new substring", "Converts a string to uppercase"],
+    "answer": "Replaces occurrences of a substring with a new substring"
+  },
+  {
+    "question": "Which method checks if a string starts with a specified prefix?",
+    "options": ["startsWith", "hasPrefix", "beginsWith", "startsWithPrefix"],
+    "answer": "startsWith"
+  },
+  {
+    "question": "What does the `substr` method do?",
+    "options": ["Returns a portion of the string between specified indices", "Counts the number of characters in a string", "Converts a string to uppercase", "Splits a string into an array"],
+    "answer": "Returns a portion of the string between specified indices"
+  }
+]

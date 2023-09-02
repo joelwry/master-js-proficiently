@@ -1,0 +1,52 @@
+[
+  {
+    "question": "What is the core focus of functional programming?",
+    "options": ["Treating computation as the evaluation of mathematical functions", "Using loops and conditions extensively", "Modifying data in place", "Maximizing side effects"],
+    "answer": "Treating computation as the evaluation of mathematical functions"
+  },
+  {
+    "question": "What is a higher-order function?",
+    "options": ["A function that takes other functions as arguments or returns functions", "A function that performs arithmetic operations", "A function that modifies global variables", "A function with multiple parameters"],
+    "answer": "A function that takes other functions as arguments or returns functions"
+  },
+  {
+    "question": "What is a pure function?",
+    "options": ["A function that always produces the same output for the same input and has no side effects", "A function that modifies data in place", "A function that relies on global variables", "A function with a complex control flow"],
+    "answer": "A function that always produces the same output for the same input and has no side effects"
+  },
+  {
+    "question": "What does immutability mean in functional programming?",
+    "options": ["Data cannot be changed after creation", "Data can be modified at any time", "Data can only be changed in pure functions", "Data can be modified only in global scope"],
+    "answer": "Data cannot be changed after creation"
+  },
+  {
+    "question": "What is the advantage of using pure functions?",
+    "options": ["They are easy to test and reason about", "They can modify global state", "They are suitable for asynchronous operations", "They have side effects"],
+    "answer": "They are easy to test and reason about"
+  },
+  {
+    "question": "What is the purpose of avoiding side effects in functional programming?",
+    "options": ["To maintain code predictability and testability", "To make the code faster", "To increase the complexity of the code", "To allow modifying data in place"],
+    "answer": "To maintain code predictability and testability"
+  },
+  {
+    "question": "What does a higher-order function do?",
+    "options": ["Takes other functions as arguments or returns functions", "Performs arithmetic operations", "Modifies global variables", "Returns objects"],
+    "answer": "Takes other functions as arguments or returns functions"
+  },
+  {
+    "question": "Which concept involves treating functions as first-class citizens?",
+    "options": ["Functional programming", "Object-oriented programming", "Procedural programming", "Imperative programming"],
+    "answer": "Functional programming"
+  },
+  {
+    "question": "Why is immutability important in functional programming?",
+    "options": ["It reduces unexpected changes and side effects", "It speeds up the execution of code", "It enables asynchronous operations", "It simplifies the use of global variables"],
+    "answer": "It reduces unexpected changes and side effects"
+  },
+  {
+    "question": "What is a key advantage of using functional programming?",
+    "options": ["Modular and reusable code", "Faster code execution", "Access to global variables", "Complex control flow"],
+    "answer": "Modular and reusable code"
+  }
+]

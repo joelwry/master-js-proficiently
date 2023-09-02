@@ -1,0 +1,58 @@
+[
+  
+  {
+    "question": "What is the purpose of the `break` statement in a loop?",
+    "options": ["To exit the loop immediately", "To skip the current iteration and move to the next", "To pause the loop temporarily", "To repeat the loop multiple times"],
+    "answer": "To exit the loop immediately"
+  },
+  {
+    "question": "What is the primary purpose of the `continue` statement in a loop?",
+    "options": ["To terminate the loop", "To restart the loop from the beginning", "To skip the current iteration and move to the next", "To pause the loop temporarily"],
+    "answer": "To skip the current iteration and move to the next"
+  },
+  {
+    "question": "What is the output of the following code?\n\n```javascript\nfor (let i = 1; i <= 5; i++) {\n  if (i === 3) {\n    continue;\n  }\n  console.log(i);\n}\n```",
+    "options": ["1, 2, 4, 5", "1, 2, 3, 4, 5", "3", "No output"],
+    "answer": "1, 2, 4, 5"
+  },
+  {
+    "question": "Which loop type is suitable when you don't know in advance how many times the loop should run?",
+    "options": ["for loop", "while loop", "do...while loop", "loop"],
+    "answer": "while loop"
+  },
+  {
+    "question": "What is the output of the following code?\n\n```javascript\nlet sum = 0;\nfor (let i = 1; i <= 5; i++) {\n  sum += i;\n}\nconsole.log(sum);\n```",
+    "options": ["1", "5", "10", "15"],
+    "answer": "15"
+  },
+  {
+    "question": "What is the purpose of the `do...while` loop?",
+    "options": ["To loop indefinitely", "To loop based on a specific condition", "To execute the loop body at least once", "To skip iterations"],
+    "answer": "To execute the loop body at least once"
+  },
+  {
+    "question": "What is the output of the following code?\n\n```javascript\nlet i = 0;\ndo {\n  console.log(i);\n  i++;\n} while (i < 3);\n```",
+    "options": ["0, 1, 2", "1, 2, 3", "3", "No output"],
+    "answer": "0, 1, 2"
+  },
+  {
+    "question": "Which loop type is suitable for iterating over elements in an array?",
+    "options": ["for loop", "while loop", "do...while loop", "loop"],
+    "answer": "for loop"
+  },
+  {
+    "question": "What is the purpose of a loop in programming?",
+    "options": ["To define functions", "To perform calculations", "To repeat a block of code", "To make decisions based on conditions"],
+    "answer": "To repeat a block of code"
+  },
+  {
+    "question": "Which loop type is suitable when you need to execute the loop at least once?",
+    "options": ["for loop", "while loop", "do...while loop", "loop"],
+    "answer":"do...while loop"
+  },
+  {
+    "question": "What does the loop condition determine?",
+    "options": ["The initial value of the loop variable", "The number of iterations", "The value to increment or decrement the loop variable", "Whether the loop body should be executed"],
+    "answer":"Whether the loop body should be executed"
+  }
+]

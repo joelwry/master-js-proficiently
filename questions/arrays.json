@@ -1,0 +1,57 @@
+[
+  {
+    "question": "Which is not an array method?",
+    "options": ["map()", "find()", "pop()", "retrieve()"],
+    "answer": "retrieve()"
+  },
+  {
+    "question": "What is an array in programming?",
+    "options": ["A single value", "A group of multiple values", "A mathematical operation", "A loop structure"],
+    "answer": "A group of multiple values"
+  },
+  {
+    "question": "How are elements in an array identified?",
+    "options": ["By their name", "By their index", "By their data type", "By their value"],
+    "answer": "By their index"
+  },
+  {
+    "question": "What is the correct syntax to declare an array in JavaScript?",
+    "options": ["array = [1, 2, 3]", "let array = {1, 2, 3}", "let array = [1, 2, 3]", "array = (1, 2, 3)"],
+    "answer": "let array = [1, 2, 3]"
+  },
+  {
+    "question": "How can you access the third element of an array called `fruits`?",
+    "options": ["fruits[0]", "fruits[1]", "fruits[2]", "fruits[3]"],
+    "answer": "fruits[2]"
+  },
+  {
+    "question": "Which loop is commonly used to iterate over elements in an array?",
+    "options": ["if...else loop", "while loop", "for loop", "switch loop"],
+    "answer": "for loop"
+  },
+  {
+    "question": "Which array method adds an element to the end of an array?",
+    "options": ["append", "push", "add", "insert"],
+    "answer": "push"
+  },
+  {
+    "question": "What does the `pop` method do on an array?",
+    "options": ["Adds an element to the end", "Removes the last element", "Reverses the order of elements", "Returns the number of elements"],
+    "answer": "Removes the last element"
+  },
+  {
+    "question": "Which method creates a new array by joining elements with a separator?",
+    "options": ["join", "merge", "combine", "concat"],
+    "answer": "join"
+  },
+  {
+    "question": "Which method sorts the elements of an array in ascending order?",
+    "options": ["sort", "order", "arrange", "organize"],
+    "answer": "sort"
+  },
+  {
+    "question": "Which method filters elements based on a condition and creates a new array?",
+    "options": ["select", "choose", "filter", "pick"],
+    "answer": "filter"
+  }
+]

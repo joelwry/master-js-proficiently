@@ -1,0 +1,3 @@
+## Section 4: Arrays and Objects
+
+Arrays and objects are fundamental data structures in JavaScript. This section equips you with the skills to work with collections of data efficiently. You will learn how to declare arrays, access elements, manipulate data, and create objects with properties and methods. By the end of this section, you surely will be more than capable managing complex data structures, hence laying the foundation for more advanced applications.

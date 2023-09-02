@@ -1,0 +1,97 @@
+[
+  {
+    "question": "What is the operator used for addition in JavaScript?",
+    "options": ["+", "-", "*", "/"],
+    "answer": "+"
+  },
+  {
+    "question": "Which operator is used for assigning a value to a variable?",
+    "options": ["=", ":", "==", "==="],
+    "answer": "="
+  },
+  {
+    "question": "What is the purpose of the `%` operator?",
+    "options": ["Division", "Exponentiation", "Modulus", "Multiplication"],
+    "answer": "Modulus"
+  },
+  {
+    "question": "Which operator is used to compare if two values are equal in JavaScript?",
+    "options": ["=", "==", "===", "!="],
+    "answer": "=="
+  },
+  {
+    "question": "What is the output of the following code?\n\n```javascript\nlet x = 10;\nlet y = 5;\nconsole.log(x > y);\n```",
+    "options": ["true", "false", "10", "5"],
+    "answer": "true"
+  },
+  {
+    "question": "Which operator is used to check if two values are equal and of the same data type?",
+    "options": ["=", "==", "===", "!="],
+    "answers":"==="
+  },
+   {
+    "question": "What is the purpose of the addition operator (+) in JavaScript?",
+    "options": ["To perform addition of numbers", "To concatenate strings", "To compare two values", "To declare variables"],
+    "answer": "To perform addition of numbers"
+  },
+  {
+    "question": "Which operator is used for string concatenation in JavaScript?",
+    "options": ["+", "&", "*", "^"],
+    "answer": "+"
+  },
+  {
+    "question": "What is the result of the expression `5 + '10'`?",
+    "options": ["510", "15", "50", "NaN"],
+    "answer": "510"
+  },
+  {
+    "question": "What is the purpose of the equality operator (==) in JavaScript?",
+    "options": ["To check if two values are equal in value and type", "To check if two values are equal in value", "To assign a value to a variable", "To compare two values"],
+    "answer": "To check if two values are equal in value"
+  },
+  {
+    "question": "What does the strict equality operator (===) check for?",
+    "options": ["Equality in value and type", "Equality in value", "Type conversion", "Logical OR"],
+    "answer": "Equality in value and type"
+  },
+  {
+    "question": "What is the result of the expression `'5' == 5`?",
+    "options": ["true", "false", "NaN", "undefined"],
+    "answer": "true"
+  },
+  {
+    "question": "What is the purpose of the logical AND operator (&&) in JavaScript?",
+    "options": ["To perform bitwise AND operation", "To perform logical AND operation", "To perform arithmetic multiplication", "To concatenate strings"],
+    "answer": "To perform logical AND operation"
+  },
+  {
+    "question": "What is the result of the expression `true && false`?",
+    "options": ["true", "false", "undefined", "null"],
+    "answer": "false"
+  },
+  {
+    "question": "What is the purpose of the typeof operator in JavaScript?",
+    "options": ["To check the data type of a value", "To convert values to strings", "To perform mathematical operations", "To compare two values"],
+    "answer": "To check the data type of a value"
+  },
+  {
+    "question": "What is the result of the expression `typeof 'Hello'`?",
+    "options": ["string", "number", "boolean", "object"],
+    "answer": "string"
+  },
+  {
+    "question": "What is the purpose of the ternary operator (?) in JavaScript?",
+    "options": ["To declare variables", "To perform conditional operations", "To calculate square roots", "To concatenate strings"],
+    "answer": "To perform conditional operations"
+  },
+  {
+    "question": "What is the result of the expression `true ? 'Yes' : 'No'`?",
+    "options": ["Yes", "No", "true", "false"],
+    "answer": "Yes"
+  },
+  {
+    "question": "What is the purpose of the modulus operator (%) in JavaScript?",
+    "options": ["To calculate the remainder of division", "To perform multiplication", "To compare values", "To concatenate strings"],
+    "answer": "To calculate the remainder of division"
+  }
+]

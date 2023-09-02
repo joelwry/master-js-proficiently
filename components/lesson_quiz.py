@@ -1,0 +1,250 @@
+import flet as ft
+import threading
+import time
+import json
+import random
+
+class Option(ft.UserControl):
+
+    def __init__(self, option_text):
+        super().__init__()
+        self.option_text = option_text
+
+    def build(self):
+        return ft.Container(
+            bgcolor=ft.colors.GREY_50,
+            margin=ft.Margin(2, 10, 2, 10),
+            padding=ft.Padding(20, 15, 15, 10),
+            clip_behavior='ANTI_ALIAS_WITH_SAVE_LAYER',
+            content=ft.ResponsiveRow([
+                ft.Radio(value=self.option_text, col=0.9),
+                ft.Text(self.option_text, max_lines=6, no_wrap=False, overflow='CLIP', col=11)
+            ])
+        )
+
+class QuizQuestionWidget(ft.UserControl):
+
+    def did_mount(self):
+        print('\nQuiz Widget Successfully mounted\n')
+
+    def will_unmount(self):
+        print('\nQuiz Widget To be Unmounted\n')
+        self.thread_stopper.set()
+        
+
+        
+    def __init__(self, question_data,user_answers, on_next_click):
+        super().__init__()
+        self.question_data = question_data
+        self.on_next_click = on_next_click
+        self.timer_thread = None
+        self.remaining_time = 60  # in seconds
+
+        # the user_answers is an object hence we will be able to track the user selection through here and it will reflect in the outside world where it was passed from
+        self.user_answers = user_answers
+        #auto-setting the user selection to none
+        self.user_answers[question_data['id']] = {
+            "question" : question_data['question'],
+            "answer" : None 
+        }
+
+    def build(self):
+        question_number = f"Question {self.question_data['number']} / {self.question_data['total']}"
+
+        question_text = ft.Text(self.question_data['question'], size=20, weight=ft.FontWeight.BOLD)
+
+        options = []
+        for option in self.question_data['options']:
+            option_widget = Option(option)
+            options.append(option_widget)
+
+        options_column =  ft.RadioGroup(content=ft.Column(options), on_change=self.handle_option_change)
+
+        next_text = "Submit" if self.question_data['number'] == self.question_data['total'] else "Next"
+        next_button = ft.ElevatedButton(next_text, on_click=lambda e : self.move_to_next_question())
+
+        column_content_holder = ft.Column(
+            [
+                ft.Text(question_number, size=14, italic=True, color=ft.colors.LIGHT_BLUE_ACCENT_400),
+                question_text,
+                options_column,
+                next_button
+            ]
+        )
+
+        # Show the remaining time using a Text widget
+        self.remaining_time_tf = ft.Text(f"Remaining Time: {self.remaining_time} seconds", size=16)
+        
+        self.start_timer()
+        self.container = ft.Container(
+            border_radius=10,
+            margin=ft.Margin(20, 30, 20, 30),
+            padding=20,
+            bgcolor="#44CCCCCC",
+            blur=ft.Blur(10, 0, ft.BlurTileMode.MIRROR),
+            shadow=ft.BoxShadow(
+                spread_radius=1,
+                blur_radius=15,
+                color=ft.colors.BLUE_GREY_300,
+                offset=ft.Offset(0, 0),
+                blur_style=ft.ShadowBlurStyle.OUTER,
+            ),
+            content=ft.Column([
+                self.remaining_time_tf,
+                column_content_holder
+            ])
+        )
+        return self.container
+
+    def handle_option_change(self, e):
+        # setting the user answer
+        self.user_answers[self.question_data['id']]['answer'] = e.control.value
+        
+
+    def start_timer(self):
+        if self.timer_thread is None or not self.timer_thread.is_alive():
+            self.timer_thread = threading.Thread(target=self.run_timer)
+            self.thread_stopper = threading.Event()
+            self.timer_thread.start()
+
+    def run_timer(self):
+        while self.remaining_time > 0:
+            time.sleep(1)
+            self.remaining_time -= 1
+
+            print(f'REMAINING TIME :  {self.remaining_time}')
+
+            # Update the UI with the remaining time
+            if self.remaining_time < 30 :
+                self.remaining_time_tf.color = 'red'
+            self.remaining_time_tf.value = f"Remaining Time: {self.remaining_time} seconds"
+            
+            #stopping the thread using event object monitoring
+            if self.thread_stopper.is_set():
+                print('Stopping Thread with event')
+                break
+
+            if self.remaining_time == 0:
+                self.move_to_next_question()
+                break
+
+            #Update the Text widget
+            try:
+                self.update()
+            except Exception as e :
+                print(e)
+        print('while loop stooped')
+
+    def move_to_next_question(self):
+        self.on_next_click()
+        self.thread_stopper.set()
+        
+
+
+
+class QuizView(ft.UserControl):
+
+    def __init__(self,question_to_load,amount_to_load):
+        super().__init__()
+        self.answer_bank = {}
+        self.questions = []
+        self.loadQuestions(question_to_load, amount_to_load)
+        self.user_answers = {}
+
+        # a view has view.update() but it must first have been added to a page first
+        #self.handleNextQuestion()
+
+    def did_mount(self):
+        print('\nQuiz Component Mounted to Page Successfully\n')
+
+    def will_unmount(self):
+        print('\nQuiz Component About To Be Removed from Page\n')
+        
+    # loading multiple questions from json files    
+    def loadQuestions(self,question_to_load,amounts):
+        with open(f'./questions/{question_to_load}.json') as json_questions :
+            questions = random.sample(json.load(json_questions),amounts)
+            question_length = len(questions)
+            for index,question in enumerate(questions):
+                index = index + 1
+                question['id'] = f'qt{index}'
+                question['total'] = question_length
+                question['number'] = index
+
+                # mapping question id to answer for ease of score calculation
+                self.answer_bank[question['id']] = question['answer']
+                # storing questions so as to create quiz component
+                self.questions.append(question)
+
+        # reverse question so that the first question would be set for popping
+        self.questions.reverse()
+
+    def handleNextQuestion(self):
+        
+        if self.questions :
+            #pop out question from 
+            current_question = self.questions.pop()
+            question_widget = QuizQuestionWidget(current_question, self.user_answers,self.handleNextQuestion)
+            self.main_column.controls = [question_widget]
+            
+        else :
+            self.main_column.controls = self.markUserSubmissions()
+            self.main_column.height = 625
+        
+        self.update()
+
+    def build(self):
+        self.main_column = ft.Column([ft.ElevatedButton("Start Quiz",on_click=lambda e : self.handleNextQuestion())],scroll="AUTO");
+        return self.main_column
+
+
+    def markUserSubmissions(self):
+        # control after being added to page now has access to page as it property 
+        #print(self.main_column.controls[0].page)
+        #container = ft.Column
+        cols = []
+        count = 1
+
+        for key in self.answer_bank :
+
+            question = ft.Column([ft.Text(spans=[ft.TextSpan(f'Question {count}',ft.TextStyle(decoration=ft.TextDecoration.UNDERLINE,color='#3D84EF'))]),ft.Text(self.user_answers[key]["question"], size=23,font_family="RobotoSlab",weight=ft.FontWeight.W_200,col=10)],col=12)
+            
+            user_selection = ft.Text(spans=[
+                    ft.TextSpan('selected :', ft.TextStyle(decoration=ft.TextDecoration.UNDERLINE,color='#7420D2')#9986D2
+                    ),
+                    ft.TextSpan(f' {self.user_answers[key]["answer"]}',ft.TextStyle(size=21,font_family="RobotoSlab",weight=ft.FontWeight.W_600))
+                ],col=12)
+
+            result = ft.Text(col=12)
+            gotten = self.answer_bank[key] == self.user_answers[key]['answer']
+            result.value = "Correct" if gotten else 'Wrong'
+            if not gotten:
+                user_selection.color = "red"
+                result.color ="red"
+
+            cols.append(ft.Container(
+                bgcolor=ft.colors.GREY_50,
+                margin=ft.Margin(2, 10, 2, 10),
+                padding=ft.Padding(20, 15, 15, 10),
+                clip_behavior='ANTI_ALIAS_WITH_SAVE_LAYER',
+                content=ft.ResponsiveRow([
+                    question,
+                    user_selection,
+                    result
+                ])
+            ))
+            
+            count += 1
+
+        return cols
+
+
+if __name__ == '__main__':
+
+    def main(page):
+        page.theme_mode = ft.ThemeMode.LIGHT
+        page.scroll = 'AUTO'
+        page.vertical_alignment = 'START'
+        page.add(QuizView('oop', 5))
+        
+    ft.app(target=main)

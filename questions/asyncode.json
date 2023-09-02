@@ -1,0 +1,53 @@
+
+[
+  {
+    "question": "What is the purpose of asynchronous programming in JavaScript?",
+    "options": ["To perform tasks without blocking the main execution thread", "To speed up the execution of code", "To make all tasks synchronous", "To prevent errors"],
+    "answer": "To perform tasks without blocking the main execution thread"
+  },
+  {
+    "question": "What is the role of the event loop in asynchronous programming?",
+    "options": ["It manages the execution of tasks in a non-blocking manner", "It blocks the execution of tasks", "It terminates the program", "It handles UI interactions only"],
+    "answer": "It manages the execution of tasks in a non-blocking manner"
+  },
+  {
+    "question": "What is a callback in asynchronous programming?",
+    "options": ["A function passed as an argument to another function and executed later", "A function that is executed immediately", "A function that runs only on the server", "A function used for loop iterations"],
+    "answer": "A function passed as an argument to another function and executed later"
+  },
+  {
+    "question": "What is the main advantage of using promises for handling asynchronous operations?",
+    "options": ["They provide a structured way to handle asynchronous code", "They execute code immediately", "They prevent errors", "They simplify UI interactions"],
+    "answer": "They provide a structured way to handle asynchronous code"
+  },
+  {
+    "question": "What are the 'async' and 'await' keywords used for?",
+    "options": ["To work with asynchronous code in a synchronous-like manner", "To terminate asynchronous operations", "To define global variables", "To create callbacks"],
+    "answer": "To work with asynchronous code in a synchronous-like manner"
+  },
+  {
+    "question": "What is the purpose of the 'setTimeout' function?",
+    "options": ["To delay the execution of a function for a specified time", "To execute a function immediately", "To create a loop", "To handle UI interactions"],
+    "answer": "To delay the execution of a function for a specified time"
+  },
+  {
+    "question": "How does 'setInterval' differ from 'setTimeout'?",
+    "options": ["'setInterval' repeatedly calls a function at a fixed interval", "'setTimeout' executes a function once after a delay", "'setTimeout' repeatedly calls a function at a fixed interval", "'setInterval' executes a function once after a delay"],
+    "answer": "'setInterval' repeatedly calls a function at a fixed interval"
+  },
+  {
+    "question": "What is the recommended way to handle errors in asynchronous code?",
+    "options": ["Using try/catch blocks and promises' 'catch' method", "Ignoring errors", "Avoiding asynchronous code altogether", "Using only callbacks for error handling"],
+    "answer": "Using try/catch blocks and promises' 'catch' method"
+  },
+  {
+    "question": "What is the purpose of 'async/await' syntax?",
+    "options": ["To simplify working with promises and make asynchronous code look more synchronous", "To convert synchronous code to asynchronous", "To replace callbacks entirely", "To make the code execute faster"],
+    "answer": "To simplify working with promises and make asynchronous code look more synchronous"
+  },
+  {
+    "question": "Why is handling asynchronous operations important in web development?",
+    "options": ["To ensure a responsive user interface and avoid blocking the main thread", "To make the code easier to read", "To prevent the use of functions", "To increase the complexity of the code"],
+    "answer": "To ensure a responsive user interface and avoid blocking the main thread"
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "question": "What is an object in JavaScript?",
+    "options": ["A single value", "A group of multiple values", "A mathematical operation", "A loop structure"],
+    "answer": "A group of multiple values"
+  },
+  {
+    "question": "How are properties and values organized within an object?",
+    "options": ["Using square brackets", "Using parentheses", "Using curly braces", "Using angle brackets"],
+    "answer": "Using curly braces"
+  },
+  {
+    "question": "Which symbol is used to separate properties and values in an object?",
+    "options": [":", ",", ";", "="],
+    "answer": ":"
+  },
+  {
+    "question": "How do you access the value of a property within an object?",
+    "options": ["object.property", "object[value]", "object.property()", "object[value]()"],
+    "answer": "object.property"
+  },
+  {
+    "question": "How do you add a new property to an existing object?",
+    "options": ["By using a dot notation", "By using square brackets", "By using parentheses", "By using angle brackets"],
+    "answer": "By using dot notation"
+  },
+  {
+    "question": "Which method is used to list all the properties of an object?",
+    "options": ["listProperties()", "propertyList()", "Object.keys()", "getProperties()"],
+    "answer": "Object.keys()"
+  },
+  {
+    "question": "How do you delete a property from an object?",
+    "options": ["delete property;", "remove property;", "object.removeProperty;", "object.deleteProperty;"],
+    "answer": "delete property;"
+  },
+  {
+    "question": "What is the purpose of the `this` keyword in an object's method?",
+    "options": ["To refer to the current object", "To create a new object", "To refer to a different object", "To access a built-in method"],
+    "answer": "To refer to the current object"
+  },
+  {
+    "question": "What is a method in an object?",
+    "options": ["A property with a function value", "A single value", "An array of values", "A loop structure"],
+    "answer": "A property with a function value"
+  },
+  {
+    "question": "How do you call a method within an object?",
+    "options": ["object.method()", "method(object)", "object.method", "method.object"],
+    "answer": "object.method()"
+  },
+  {
+    "question": "What is the purpose of object destructuring in JavaScript?",
+    "options": ["To create a new object", "To access properties from an object more easily", "To delete properties from an object", "To list all properties of an object"],
+    "answer": "To access properties from an object more easily"
+  },
+  {
+    "question": "Which operator is used to check if a property exists in an object?",
+    "options": ["exists", "hasProperty", "in", "contains"],
+    "answer": "in"
+  },
+  {
+    "question": "What is a constructor function used for in JavaScript?",
+    "options": ["To perform mathematical calculations", "To create new objects with shared properties", "To delete properties from an object", "To list all properties of an object"],
+    "answer": "To create new objects with shared properties"
+  },
+  {
+    "question": "How do you create an instance of an object using a constructor function?",
+    "options": ["newObject(constructor)", "constructor.new()", "new constructor()", "create.constructor()"],
+    "answer": "new constructor()"
+  },
+  {
+    "question": "What is the purpose of the `Object.create()` method?",
+    "options": ["To create a new empty object", "To clone an existing object", "To create an object with a specific prototype", "To delete properties from an object"],
+    "answer": "To create an object with a specific prototype"
+  }
+]

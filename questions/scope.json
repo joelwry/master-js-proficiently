@@ -1,0 +1,52 @@
+[
+  {
+    "question": "What does the term 'scope' refer to in JavaScript?",
+    "options": ["The visibility or accessibility of variables and functions", "The color theme of your code editor", "The order in which functions are executed", "The memory allocation for variables"],
+    "answer": "The visibility or accessibility of variables and functions"
+  },
+  {
+    "question": "Where can global scope variables be accessed?",
+    "options": ["Only inside the function they were declared in", "Any part of the code", "Only within the block they were declared in", "Only within an object"],
+    "answer": "Any part of the code"
+  },
+  {
+    "question": "What is the scope of variables declared inside a function?",
+    "options": ["Global scope", "Block scope", "Function scope", "Local scope"],
+    "answer": "Function scope"
+  },
+  {
+    "question": "Which keyword introduced block scope in JavaScript?",
+    "options": ["var", "let", "const", "block"],
+    "answer": "let"
+  },
+  {
+    "question": "What is a closure in JavaScript?",
+    "options": ["A function inside another function", "A global variable", "A loop structure", "A method to concatenate strings"],
+    "answer": "A function inside another function"
+  },
+  {
+    "question": "Which of the following is NOT an advantage of closures?",
+    "options": ["Data encapsulation", "Modularity", "Global accessibility", "Private variables"],
+    "answer": "Global accessibility"
+  },
+  {
+    "question": "When does a closure retain access to variables from its outer function's scope?",
+    "options": ["Before the outer function finishes executing", "After the outer function finishes executing", "During the outer function's execution", "Only in the global scope"],
+    "answer": "After the outer function finishes executing"
+  },
+  {
+    "question": "What is the purpose of using closures for data encapsulation?",
+    "options": ["To make variables globally accessible", "To create public methods", "To hide data from being accessed directly", "To increase code complexity"],
+    "answer": "To hide data from being accessed directly"
+  },
+  {
+    "question": "Which of the following is an example of block scope?",
+    "options": ["Variables declared inside a function", "Variables declared with var", "Variables declared with const", "Variables declared globally"],
+    "answer": "Variables declared with let"
+  },
+  {
+    "question": "What happens if you try to access a variable outside its scope?",
+    "options": ["An error is thrown", "The variable is automatically declared globally", "The variable's value changes", "The variable's scope expands"],
+    "answer": "An error is thrown"
+  }
+]

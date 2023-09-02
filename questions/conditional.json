@@ -1,0 +1,62 @@
+[
+  {
+    "question": "Which of the following keywords is used to represent the \"else\" part of an if...else statement?",
+    "options": ["otherwise", "otherwise if", "elseif", "else"],
+    "answer": "else"
+  },
+  {
+    "question": "What is the purpose of a conditional statement in programming?",
+    "options": ["To declare variables", "To perform calculations", "To make decisions based on conditions", "To define functions"],
+    "answer": "To make decisions based on conditions"
+  },
+  {
+    "question": "What is the output of the following code?\n\n```javascript\nlet x = 8;\nif (x < 5) {\n  console.log(\"x is less than 5\");\n} else {\n  console.log(\"x is greater than or equal to 5\");\n}\n```",
+    "options": ["x is less than 5", "x is greater than or equal to 5", "8", "No output"],
+    "answer": "x is greater than or equal to 5"
+  },
+  {
+    "question": "Which logical operator is used to combine multiple conditions in an if...else statement?",
+    "options": ["&& (Logical AND)", "|| (Logical OR)", "! (Logical NOT)", "& (Bitwise AND)"],
+    "answer": "&& (Logical AND)"
+  },
+  {
+    "question": "What is the purpose of the `switch` statement?",
+    "options": ["To loop over elements in an array", "To perform mathematical calculations", "To make decisions based on conditions", "To define functions"],
+    "answer": "To make decisions based on conditions"
+  },
+  {
+    "question": "What is the output of the following code?\n\n```javascript\nlet day = \"Monday\";\nswitch (day) {\n  case \"Saturday\":\n    console.log(\"It's a weekend\");\n    break;\n  case \"Sunday\":\n    console.log(\"It's a weekend\");\n    break;\n  default:\n    console.log(\"It's a weekday\");\n}\n```",
+    "options": ["It's a weekend", "It's a weekday", "Saturday", "Sunday"],
+    "answer": "It's a weekday"
+  },
+  {
+    "question": "Which statement is used to execute a block of code when a condition is false?",
+    "options": ["if", "else", "switch", "while"],
+    "answer": "else"
+  },
+  {
+    "question": "What is the output of the following code?\n\n```javascript\nlet num = 10;\nif (num % 2 === 0) {\n  console.log(\"Even number\");\n} else {\n  console.log(\"Odd number\");\n}\n```",
+    "options": ["Even number", "Odd number", "10", "No output"],
+    "answer": "Even number"
+  },
+  {
+    "question": "What is the purpose of the `break` statement in a switch statement?",
+    "options": ["To exit the switch statement", "To skip the current case and move to the next", "To pause the switch statement temporarily", "To repeat the switch statement multiple times"],
+    "answer": "To exit the switch statement"
+  },
+  {
+    "question": "Which of the following statements is true about the `default` case in a switch statement?",
+    "options": ["It is optional and can be omitted.", "It is mandatory and must always be included.", "It is executed only if there is no matching case.", "It is executed if the condition in the switch statement is true."],
+    "answer": "It is optional and can be omitted."
+  },
+  {
+    "question": "What is the output of the following code?\n\n```javascript\nlet fruit = \"apple\";\nswitch (fruit) {\n  case \"banana\":\n    console.log(\"It's a banana\");\n    break;\n  case \"orange\":\n    console.log(\"It's an orange\");\n    break;\n  default:\n    console.log(\"It's a fruit\");\n}\n```",
+    "options": ["It's a banana", "It's an orange", "It's a fruit", "apple"],
+    "answer": "It's a fruit"
+  },
+  {
+    "question": "Which of the following is the correct syntax for an if conditional statement?",
+    "options": ["if (condition) {}", "if {condition} else {}", "{if (condition)} else {}", "{if (condition) else}"],
+    "answer":"if (condition) {}"
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "question": "What is the purpose of using the script tag in HTML?",
+    "options": [
+      "To define a new HTML element",
+      "To create a new HTML page",
+      "To include JavaScript in HTML documents",
+      "To link to external CSS files"
+    ],
+    "answer": "To include JavaScript in HTML documents"
+  },
+  {
+    "question": "Which type of comments are ignored by the JavaScript interpreter?",
+    "options": ["Single line comments", "Multiple line comments", "Both types of comments", "None of the above"],
+    "answer": "Both types of comments"
+  },
+  {
+    "question": "How do you declare a variable in JavaScript using the 'let' keyword?",
+    "options": ["let myVariable = value;", "myVariable = let value;", "variable = let myVariable;", "let = myVariable value;"],
+    "answer": "let myVariable = value;"
+  },
+  {
+    "question": "Which keyword is used to declare a variable with a constant value that cannot be changed?",
+    "options": ["variable", "const", "let", "var"],
+    "answer": "const"
+  },
+  {
+    "question": "What is the purpose of using 'console.log()' in JavaScript?",
+    "options": [
+      "To log errors to the console",
+      "To print text on the webpage",
+      "To display output in the browser's console",
+      "To create a new variable"
+    ],
+    "answer": "To display output in the browser's console"
+  },
+  {
+    "question": "Which data type is used to represent text in JavaScript?",
+    "options": ["Number", "Boolean", "String", "Null"],
+    "answer": "String"
+  },
+  {
+    "question": "What is the data type of a variable that represents a numeric value?",
+    "options": ["String", "Number", "Boolean", "Undefined"],
+    "answer": "Number"
+  },
+  {
+    "question": "Which data type represents a value of true or false?",
+    "options": ["Number", "String", "Boolean", "Null"],
+    "answer": "Boolean"
+  },
+  {
+    "question": "What is the purpose of the 'null' data type in JavaScript?",
+    "options": [
+      "To represent an undefined value",
+      "To store a string value",
+      "To store a number value",
+      "To represent an empty or non-existent value"
+    ],
+    "answer": "To represent an empty or non-existent value"
+  },
+  {
+    "question": "What is the data type of a variable that has been declared but not assigned a value?",
+    "options": ["Number", "String", "Boolean", "Undefined"],
+    "answer": "Undefined"
+  },
+  {
+    "question": "What is the primary purpose of using comments in JavaScript?",
+    "options": [
+      "To create interactive features",
+      "To print output to the console",
+      "To link to external files",
+      "To provide explanations and documentation"
+    ],
+    "answer": "To provide explanations and documentation"
+  },
+  {
+    "question": "What is the advantage of declaring a variable with the 'const' keyword?",
+    "options": [
+      "It allows reassignment of values",
+      "It provides block scope",
+      "It represents a constant value",
+      "It has global scope"
+    ],
+    "answer": "It represents a constant value"
+  },
+  {
+    "question": "How can you determine the data type of a variable in JavaScript?",
+    "options": [
+      "By using the 'typeof' operator",
+      "By using the 'dataType' property",
+      "By using the 'type' method",
+      "By checking the variable's value"
+    ],
+    "answer": "By using the 'typeof' operator"
+  },
+  {
+    "question": "Which variable declaration keyword provides block scope?",
+    "options": ["var", "let", "const", "block"],
+    "answer": "let"
+  }
+]

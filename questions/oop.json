@@ -1,0 +1,102 @@
+[
+  {
+    "question": "What is the main idea behind Object-Oriented Programming?",
+    "options": ["Organizing code into reusable and self-contained objects", "Creating complex algorithms", "Minimizing the use of functions", "Optimizing memory usage"],
+    "answer": "Organizing code into reusable and self-contained objects"
+  },
+  {
+    "question": "What are classes in Object-Oriented Programming?",
+    "options": ["Blueprints for creating objects", "Collections of functions", "Single instances of objects", "Data structures"],
+    "answer": "Blueprints for creating objects"
+  },
+  {
+    "question": "Which keyword is used to create a class in JavaScript?",
+    "options": ["class", "object", "instance", "prototype"],
+    "answer": "class"
+  },
+  {
+    "question": "What is the purpose of the 'constructor' method in a class?",
+    "options": ["Initializing object properties when an instance is created", "Defining static methods", "Performing asynchronous operations", "Handling exceptions"],
+    "answer": "Initializing object properties when an instance is created"
+  },
+  {
+    "question": "What is inheritance in OOP?",
+    "options": ["A mechanism for a class to inherit properties and methods from another class", "An approach to hide data from other classes", "A way to create new instances of a class", "A way to create custom data types"],
+    "answer": "A mechanism for a class to inherit properties and methods from another class"
+  },
+  {
+    "question": "What is polymorphism in OOP?",
+    "options": ["Treating objects of different classes as objects of a common superclass", "Using the same name for different variables", "Accessing private properties of objects", "Creating global variables"],
+    "answer": "Treating objects of different classes as objects of a common superclass"
+  },
+  {
+    "question": "What are static methods in a class?",
+    "options": ["Methods called on the class itself, not on instances", "Methods that modify object properties", "Methods that perform asynchronous operations", "Methods with dynamic names"],
+    "answer": "Methods called on the class itself, not on instances"
+  },
+  {
+    "question": "What is abstraction in OOP?",
+    "options": ["Hiding complex implementation details and showing only essential features", "Creating multiple instances of a class", "Storing data in separate variables", "Accessing methods from different classes"],
+    "answer": "Hiding complex implementation details and showing only essential features"
+  },
+  {
+    "question": "What is encapsulation in OOP?",
+    "options": ["Bundling data and methods into a single unit (class)", "Hiding the superclass's methods from subclasses", "Exposing all object properties publicly", "Creating new instances of a class"],
+    "answer": "Bundling data and methods into a single unit (class)"
+  },
+  {
+    "question": "What is the purpose of the 'new' keyword in JavaScript?",
+    "options": ["To create an instance of a class", "To define a new variable", "To execute a function immediately", "To access a static method"],
+    "answer": "To create an instance of a class"
+  },
+  {
+    "question": "Which OOP concept allows a class to inherit from multiple classes?",
+    "options": ["Multiple inheritance", "Single inheritance", "Polymorphism", "Abstraction"],
+    "answer": "Multiple inheritance"
+  },
+  {
+    "question": "What is a subclass?",
+    "options": ["A class that inherits properties and methods from another class", "A class with no properties", "A class that has static methods", "A class that cannot be instantiated"],
+    "answer": "A class that inherits properties and methods from another class"
+  },
+  {
+    "question": "What is the purpose of encapsulation?",
+    "options": ["To hide implementation details and prevent direct access to internal data", "To expose all data publicly", "To create subclasses", "To define constructors"],
+    "answer": "To hide implementation details and prevent direct access to internal data"
+  },
+  {
+    "question": "Which OOP concept allows you to define a common interface for several related classes?",
+    "options": ["Abstraction", "Encapsulation", "Polymorphism", "Inheritance"],
+    "answer": "Abstraction"
+  },
+  {
+    "question": "What is the main advantage of using OOP principles?",
+    "options": ["Code reusability, organization, and maintainability", "Faster execution of code", "Reduced memory usage", "Access to global variables"],
+    "answer": "Code reusability, organization, and maintainability"
+  },
+  {
+    "question": "What is the purpose of the 'this' keyword in a class method?",
+    "options": ["To refer to the current instance of the class", "To define a new variable", "To create a new class", "To access a superclass method"],
+    "answer": "To refer to the current instance of the class"
+  },
+  {
+    "question": "What is a constructor function in JavaScript?",
+    "options": ["A function that initializes object properties", "A function that performs asynchronous operations", "A function with no parameters", "A function used for mathematical calculations"],
+    "answer": "A function that initializes object properties"
+  },
+  {
+    "question": "Which OOP principle allows you to extend and modify a class's behavior without modifying its source code?",
+    "options": ["Open-Closed Principle", "Single Responsibility Principle", "Liskov Substitution Principle", "Dependency Inversion Principle"],
+    "answer": "Open-Closed Principle"
+  },
+  {
+    "question": "What is the purpose of the 'extends' keyword in class definitions?",
+    "options": ["To establish inheritance between classes", "To define a static method", "To import other classes", "To create instances of classes"],
+    "answer": "To establish inheritance between classes"
+  },
+  {
+    "question": "Which OOP concept promotes the concept of 'one class, one responsibility'?",
+    "options": ["Single Responsibility Principle", "Liskov Substitution Principle", "Dependency Inversion Principle", "Interface Segregation Principle"],
+    "answer": "Single Responsibility Principle"
+  }
+]

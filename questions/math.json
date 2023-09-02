@@ -1,0 +1,53 @@
+
+[
+  {
+    "question": "Which mathematical constant represents Euler's number?",
+    "options": ["E", "PI", "LN2", "SQRT2"],
+    "answer": "E"
+  },
+  {
+    "question": "What does the `ceil` method do?",
+    "options": ["Rounds a number up to the nearest integer", "Rounds a number down to the nearest integer", "Finds the maximum value among given numbers", "Finds the minimum value among given numbers"],
+    "answer": "Rounds a number up to the nearest integer"
+  },
+  {
+    "question": "Which method returns the square root of a number?",
+    "options": ["sqrt", "abs", "pow", "round"],
+    "answer": "sqrt"
+  },
+  {
+    "question": "What does the `random` method generate?",
+    "options": ["A random string", "A random integer", "A pseudo-random floating-point number between 0 (inclusive) and 1 (exclusive)", "A random boolean value"],
+    "answer": "A pseudo-random floating-point number between 0 (inclusive) and 1 (exclusive)"
+  },
+  {
+    "question": "Which method returns the maximum value among given numbers?",
+    "options": ["max", "min", "abs", "round"],
+    "answer": "max"
+  },
+  {
+    "question": "What is the value of `Math.PI`?",
+    "options": ["3.14", "3.141", "3.1415", "3.14159"],
+    "answer": "3.141592653589793"
+  },
+  {
+    "question": "What does the `pow` method do?",
+    "options": ["Calculates the base raised to the power of the exponent", "Calculates the square root of a number", "Finds the logarithm of a number", "Finds the nearest integer greater than or equal to a number"],
+    "answer": "Calculates the base raised to the power of the exponent"
+  },
+  {
+    "question": "Which method removes the decimal part of a number?",
+    "options": ["trunc", "round", "ceil", "floor"],
+    "answer": "trunc"
+  },
+  {
+    "question": "What is the purpose of the `floor` method?",
+    "options": ["Rounds a number up to the nearest integer", "Rounds a number down to the nearest integer", "Finds the maximum value among given numbers", "Finds the minimum value among given numbers"],
+    "answer": "Rounds a number down to the nearest integer"
+  },
+  {
+    "question": "Which method rounds a number to the nearest integer?",
+    "options": ["round", "ceil", "floor", "trunc"],
+    "answer": "round"
+  }
+]

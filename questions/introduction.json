@@ -1,0 +1,77 @@
+[
+  {
+    "question": "What is JavaScript often referred to as?",
+    "options": ["The language of the web", "The language of computers", "The language of data", "The language of graphics"],
+    "answer": "The language of the web"
+  },
+  {
+    "question": "What role does JavaScript play in web development?",
+    "options": ["Backend development", "Database management", "Creating interactive and responsive websites", "Designing user interfaces"],
+    "answer": "Creating interactive and responsive websites"
+  },
+  {
+    "question": "Which technology allows JavaScript to handle server-side tasks?",
+    "options": ["React", "Angular", "Vue.js", "Node.js"],
+    "answer": "Node.js"
+  },
+  {
+    "question": "With what technology can you create mobile apps using JavaScript?",
+    "options": ["React Native", "Swift", "Java", "Kotlin"],
+    "answer": "React Native"
+  },
+  {
+    "question": "Which field uses JavaScript for making games?",
+    "options": ["Data science", "Game development", "Network security", "Hardware engineering"],
+    "answer": "Game development"
+  },
+  {
+    "question": "How can JavaScript be used in IoT?",
+    "options": ["Creating interactive websites", "Controlling smart devices", "Enhancing mobile apps", "Developing server applications"],
+    "answer": "Controlling smart devices"
+  },
+  {
+    "question": "What does JavaScript add to buttons to make them change colors when hovered over?",
+    "options": ["Interactivity", "Animation", "Design", "Sound"],
+    "answer": "Interactivity"
+  },
+  {
+    "question": "What does JavaScript do to keep users informed of updates without reloading a page?",
+    "options": ["Performs mathematical operations", "Sends email notifications", "Plays audio alerts", "Shows real-time updates"],
+    "answer": "Shows real-time updates"
+  },
+  {
+    "question": "How does JavaScript contribute to responsive design?",
+    "options": ["By displaying error messages", "By adapting to different screen sizes", "By playing animations", "By loading images"],
+    "answer": "By adapting to different screen sizes"
+  },
+  {
+    "question": "What makes user-friendly forms possible on websites?",
+    "options": ["JavaScript's ability to run without an internet connection", "JavaScript's automatic submission of forms", "JavaScript's real-time error messages", "JavaScript's font style choices"],
+    "answer": "JavaScript's real-time error messages"
+  },
+  {
+    "question": "What does JavaScript add to websites with smooth transitions?",
+    "options": ["Animation", "High-resolution images", "Background music", "3D effects"],
+    "answer": "Animation"
+  },
+  {
+    "question": "How does JavaScript achieve dynamic content loading as users scroll?",
+    "options": ["By generating QR codes", "By displaying pop-up ads", "By changing the font size", "By fetching and displaying content on the fly"],
+    "answer": "By fetching and displaying content on the fly"
+  },
+  {
+    "question": "Which term best describes JavaScript's role in transforming static websites?",
+    "options": ["Enhancement", "Optimization", "Magic", "Simplification"],
+    "answer": "Magic"
+  },
+  {
+    "question": "What kind of applications can be built with JavaScript that run entirely in the browser?",
+    "options": ["Mobile apps", "Desktop apps", "Offline apps", "Web apps"],
+    "answer": "Web apps"
+  },
+  {
+    "question": "How does JavaScript enable web apps to connect with external services?",
+    "options": ["By creating new APIs", "By managing databases", "By using the this keyword", "By integrating APIs"],
+    "answer": "By integrating APIs"
+  }
+]

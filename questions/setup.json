@@ -1,0 +1,112 @@
+[
+  {
+    "question": "What is the purpose of connecting a JS file to an HTML file?",
+    "options": [
+      "To run JavaScript code without writing HTML",
+      "To see JavaScript output in a browser",
+      "To create a standalone JavaScript program",
+      "To optimize the JavaScript code"
+    ],
+    "answer": "To see JavaScript output in a browser"
+  },
+  {
+    "question": "What should be included in the `<body>` of an HTML file to connect a JS file?",
+    "options": [
+      "<script src=\"myscript.js\"></script>",
+      "<js>myscript.js</js>",
+      "<js>src=\"myscript.js\"</js>",
+      "<javascript>myscript.js</javascript>"
+    ],
+    "answer": "<script src=\"myscript.js\"></script>"
+  },
+  {
+    "question": "Which file type is used to write JavaScript code that can be connected to an HTML file?",
+    "options": ["HTML", "CSS", "JavaScript", "Text"],
+    "answer": "JavaScript"
+  },
+  {
+    "question": "How can you view the output of your JavaScript code in a browser when connected to an HTML file?",
+    "options": [
+      "By opening the HTML file in a text editor",
+      "By running the HTML file in a terminal",
+      "By using the browser's developer console",
+      "By saving the HTML file as a JavaScript file"
+    ],
+    "answer": "By using the browser's developer console"
+  },
+  {
+    "question": "Which code editor is lightweight and versatile for JavaScript programming?",
+    "options": ["Visual Studio Code", "Notepad", "Sublime Text", "Eclipse"],
+    "answer": "Sublime Text"
+  },
+  {
+    "question": "What is Node.js used for in the context of Sublime Text setup?",
+    "options": [
+      "To provide syntax highlighting",
+      "To run JavaScript code in the browser",
+      "To create HTML pages",
+      "To run JavaScript code without a browser"
+    ],
+    "answer": "To run JavaScript code without a browser"
+  },
+  {
+    "question": "Which command is used to run a JavaScript file using Node.js?",
+    "options": ["run myScript.js", "execute myScript.js", "node myScript.js", "start myScript.js"],
+    "answer": "node myScript.js"
+  },
+  {
+    "question": "What is the purpose of using Visual Studio Code (VSCode) for JavaScript programming?",
+    "options": [
+      "To create HTML files",
+      "To write CSS code",
+      "To build mobile apps",
+      "To write and run JavaScript code"
+    ],
+    "answer": "To write and run JavaScript code"
+  },
+  {
+    "question": "What is the purpose of saving a code file with a `.js` extension?",
+    "options": [
+      "To indicate it's a Java file",
+      "To add color syntax highlighting",
+      "To link it to an HTML file",
+      "To indicate it's a JavaScript file"
+    ],
+    "answer": "To indicate it's a JavaScript file"
+  },
+  {
+    "question": "Which command is used to run a JavaScript file in the terminal with Node.js?",
+    "options": ["run myScript.js", "node myScript.js", "execute myScript.js", "start myScript.js"],
+    "answer": "node myScript.js"
+  },
+  {
+    "question": "What is the main advantage of connecting a JS file to an HTML file for JavaScript execution?",
+    "options": [
+      "It simplifies the JavaScript syntax",
+      "It automatically generates HTML content",
+      "It allows JavaScript code execution in isolation",
+      "It ensures cross-browser compatibility"
+    ],
+    "answer": "It allows JavaScript code execution in isolation"
+  },
+  {
+    "question": "What does the `<script src=\"myscript.js\"></script>` tag do in an HTML file?",
+    "options": [
+      "Links to an external stylesheet",
+      "Includes an external JavaScript file",
+      "Defines a new function",
+      "Displays an alert message"
+    ],
+    "answer": "Includes an external JavaScript file"
+  },
+  {
+    "question": "What does running a JavaScript file using Node.js mean?",
+    "options": [
+      "Executing it in a web browser",
+      "Interpreting it with a programming language",
+      "Executing it with a runtime environment",
+      "Running it as a server application"
+    ],
+    "answer": "Executing it with a runtime environment"
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "question": "What is a regular expression?",
+    "options": ["A sequence of characters that defines a search pattern", "A method to convert text to lowercase", "A way to create arrays in JavaScript", "A type of conditional statement"],
+    "answer": "A sequence of characters that defines a search pattern"
+  },
+  {
+    "question": "How can you create a regular expression using a literal notation?",
+    "options": ["regexLiteral = /pattern/", "regexLiteral = new RegExp('pattern')", "regexLiteral = createRegex('pattern')", "regexLiteral = regex.create('pattern')"],
+    "answer": "regexLiteral = /pattern/"
+  },
+  {
+    "question": "Which method returns `true` if the pattern is found in the string?",
+    "options": ["match()", "search()", "test()", "exec()"],
+    "answer": "test()"
+  },
+  {
+    "question": "What does the character class [0-9] represent?",
+    "options": ["Matches any digit", "Matches any letter", "Matches any special character", "Matches any whitespace"],
+    "answer": "Matches any digit"
+  },
+  {
+    "question": "What does the quantifier {3,5} specify?",
+    "options": ["Matches exactly 3 characters", "Matches 3 to 5 characters", "Matches at least 3 characters", "Matches any number of characters"],
+    "answer": "Matches 3 to 5 characters"
+  },
+  {
+    "question": "Which method returns an array containing information about the first match?",
+    "options": ["test()", "exec()", "match()", "search()"],
+    "answer": "exec()"
+  },
+  {
+    "question": "What does the method `replace()` do?",
+    "options": ["Finds the index of the first match", "Removes matches from the string", "Replaces matches with a specified value", "Counts the number of matches"],
+    "answer": "Replaces matches with a specified value"
+  },
+  {
+    "question": "What does the character class [a-z] represent?",
+    "options": ["Matches any uppercase letter", "Matches any lowercase letter", "Matches any digit", "Matches any special character"],
+    "answer": "Matches any lowercase letter"
+  },
+  {
+    "question": "What does the method `search()` return?",
+    "options": ["Index of the first match", "Boolean indicating if a match is found", "Array of matches", "Number of matches"],
+    "answer": "Index of the first match"
+  },
+  {
+    "question": "Which method returns an array of matches?",
+    "options": ["test()", "exec()", "match()", "search()"],
+    "answer": "match()"
+  }
+]
