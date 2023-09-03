@@ -140,6 +140,112 @@ class QuizQuestionWidget(ft.UserControl):
         self.thread_stopper.set()
         
 
+# a widget to display user quiz test score 
+class ScoreCardWidget(ft.UserControl):
+    def __init__(self,quiz_name,user_score_percentage,score_card_text,correct_count,total_count):
+        super().__init__()
+        self.user_score_percentage = user_score_percentage
+        self.quiz_name = quiz_name
+        self.score_card_text = score_card_text
+        self.correct_count = correct_count
+        self.total_question_count = total_count
+
+    def build(self):
+        correct_count_color = "red" if self.user_score_percentage < 45 else "#19444e"
+        score_card = ft.Container(
+            margin=ft.margin.symmetric(30,10),padding=20,alignment=ft.alignment.center,
+            bgcolor="#cbbbe8", width=300,height=300,
+            border_radius=20,
+            blur=ft.Blur(10, 0, ft.BlurTileMode.MIRROR),
+            shadow=ft.BoxShadow(
+                spread_radius=2,
+                blur_radius=4,
+                color=ft.colors.BLUE_GREY_300,
+                offset=ft.Offset(0, 0),
+                blur_style=ft.ShadowBlurStyle.OUTER,
+            ),
+            content=ft.Column(
+                [
+                    ft.Text(
+                        spans =[
+                            ft.TextSpan(
+                                self.quiz_name,
+                                ft.TextStyle(
+                                    size=30,
+                                    weight=ft.FontWeight.BOLD,
+                                    foreground=ft.Paint(
+                                        gradient=ft.PaintLinearGradient(
+                                            (0, 20), (150, 20), [ft.colors.PINK, "#006400"]
+                                        )
+                                    ),
+                                    shadow=ft.BoxShadow(
+                                        spread_radius=0,
+                                        blur_radius=1,
+                                        color="#343743",
+                                        offset=ft.Offset(0, 0),
+                                        blur_style=ft.ShadowBlurStyle.INNER,
+                                    )
+                                ),
+                            ),
+                        ]
+                    ),
+                    ft.Container(
+                        shape=ft.BoxShape.CIRCLE,border_radius=40,padding=30,
+                        blur=ft.Blur(10, 0, ft.BlurTileMode.MIRROR),
+                        border = ft.border.all(4, 'white'),
+                        
+                        content=ft.Text(
+                            spans =[
+                                ft.TextSpan(
+                                    f'{self.user_score_percentage:.2f}%',
+                                    ft.TextStyle(
+                                        size=20,
+                                        weight=ft.FontWeight.W_600,
+                                        foreground=ft.Paint(
+                                            gradient=ft.PaintLinearGradient(
+                                                (0, 20), (150, 20), ["#0021400","#19444e"]
+                                            )
+                                        ),
+                                        shadow=ft.BoxShadow(
+                                            spread_radius=0,
+                                            blur_radius=1,
+                                            color="#343743",
+                                            offset=ft.Offset(0, 0),
+                                            blur_style=ft.ShadowBlurStyle.INNER,
+                                        )
+                                    ),
+                                ),
+                            ]
+                        )
+                    ),
+                    ft.Text("Score : ", size=20,
+                        spans = [
+                            ft.TextSpan(
+                                self.correct_count, 
+                                ft.TextStyle(
+                                    size = 23, weight=ft.FontWeight.BOLD,
+                                    color = correct_count_color 
+                                )
+                            ),
+                            ft.TextSpan(
+                                " out of ",ft.TextStyle(italic=True)
+                            ),
+                            ft.TextSpan(
+                                self.total_question_count, 
+                                ft.TextStyle(
+                                    size = 23, weight=ft.FontWeight.BOLD,
+                                    color = "#006400" 
+                                )
+                            )
+                        ]
+                    ),
+                    ft.Text(self.score_card_text, size=21, color=correct_count_color,weight=ft.FontWeight.BOLD,italic=True),
+                ],
+                alignment=ft.MainAxisAlignment.CENTER,
+                horizontal_alignment=ft.CrossAxisAlignment.CENTER,)
+            )
+        return score_card
+
 
 
 class QuizView(ft.UserControl):
@@ -149,11 +255,9 @@ class QuizView(ft.UserControl):
         self.answer_bank = {}
         self.questions = []
         self.loadQuestions(question_to_load, amount_to_load)
+        self.quiz_name = question_to_load
         self.user_answers = {}
-
-        # a view has view.update() but it must first have been added to a page first
-        #self.handleNextQuestion()
-
+       
     def did_mount(self):
         print('\nQuiz Component Mounted to Page Successfully\n')
 
@@ -188,7 +292,18 @@ class QuizView(ft.UserControl):
             self.main_column.controls = [question_widget]
             
         else :
-            self.main_column.controls = self.markUserSubmissions()
+            # Create the card to display user score
+            result_calculation = self.calculateUserScorePercentage()
+            user_score_percentage  = result_calculation['percentage']
+            score_card_text = self.getScoreCardText(user_score_percentage)
+
+            score_card = ft.Row([
+                ScoreCardWidget(self.quiz_name,user_score_percentage,score_card_text,result_calculation['total_correct'],result_calculation['total_question'])
+                ],scroll="AUTO",alignment=ft.MainAxisAlignment.CENTER
+            )
+            self.main_column.controls.pop()
+            self.main_column.controls.append(score_card) 
+            self.main_column.controls.extend(self.markUserSubmissions())
             self.main_column.height = 625
         
         self.update()
@@ -237,6 +352,27 @@ class QuizView(ft.UserControl):
             count += 1
 
         return cols
+
+    def calculateUserScorePercentage(self):
+        correct_count = sum(
+            1
+            for key in self.user_answers
+            if self.user_answers[key]["answer"] == self.answer_bank[key]
+        )
+        total_questions = len(self.answer_bank)
+        return {
+            "percentage":(correct_count / total_questions) * 100,
+            "total_correct" : correct_count,
+            "total_question":total_questions
+        }
+
+    def getScoreCardText(self, user_score_percentage):
+        if user_score_percentage >= 80:
+            return "Excellent!"
+        elif user_score_percentage >= 50:
+            return "Passed!"
+        else:
+            return "Not Cleared."
 
 
 if __name__ == '__main__':
