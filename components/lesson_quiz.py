@@ -3,6 +3,8 @@ import threading
 import time
 import json
 import random
+from components.single.circular_loading import CircularLoading
+
 
 class Option(ft.UserControl):
 
@@ -292,6 +294,10 @@ class QuizView(ft.UserControl):
             self.main_column.controls = [question_widget]
             
         else :
+            self.main_column.controls = [CircularLoading("Compiling Quiz Result")]
+            self.update()
+            print('sleeping time')
+            #time.sleep(10)
             # Create the card to display user score
             result_calculation = self.calculateUserScorePercentage()
             user_score_percentage  = result_calculation['percentage']
