@@ -286,7 +286,11 @@ class QuizView(ft.UserControl):
         self.questions.reverse()
 
     def handleNextQuestion(self):
-        
+
+        #focused on using height of 600 here so as to enable quiz to be scrollable if they overlapp
+        if self.main_column.height != 600:
+            self.main_column.height = 600
+            
         if self.questions :
             #pop out question from 
             current_question = self.questions.pop()

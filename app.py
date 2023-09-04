@@ -1,6 +1,6 @@
 import flet as ft
 #from utilities import helper
-from components.lesson_content import LessonView,appBar,introPage,createfloatingButton,createGeneralAppBar
+from components.lesson_content import LessonView,lessonAppBar,introPage,createfloatingButton,createGeneralAppBar
 from components.lesson_quiz import QuizView
 	
 
@@ -14,9 +14,9 @@ def main(page: ft.Page):
         print(f'Topic Index : {topic_index}')
         component1 = LessonView("./mdfiles/section1.md","/")
         if not topic_index: 
-            appBar(component1.view,component1.updateMarkDownContent)
+           lessonAppBar(component1.view,component1.updateMarkDownContent)
         else :
-            appBar(component1.view,component1.updateMarkDownContent,topic_index)
+           lessonAppBar(component1.view,component1.updateMarkDownContent,topic_index)
 
         page.views.append(component1.view)  
         page.vertical_alignment ="CENTER"
@@ -34,7 +34,7 @@ def main(page: ft.Page):
                     createGeneralAppBar('Modern Javascript Tutor'),
                     ft.ElevatedButton("Start Lesson", on_click=lambda _: page.go("/lesson")),
                     
-                    createfloatingButton('code'),
+                    createfloatingButton('code',ft.icons.CODE_OUTLINED),
                     introPage(page),
 
                 ],
@@ -63,13 +63,23 @@ def main(page: ft.Page):
                 print("ID:", router.id)
                 print("ACTIVE INDEX:", router.index)
                 quiz_id = router.id
+
+                # this function will be assigned to an event listener so as to enable the user go back to lessons
+                def backToLesson(e):
+                    page.go(f"/lesson/{router.index}")
+
                 page.views.append(
                     ft.View(
                         f"/quiz/{quiz_id}",
-                        [
+                        controls=[
+                            createGeneralAppBar('Quiz'),
                             QuizView(quiz_id, 5),
-                            ft.ElevatedButton("Back To Lesson", on_click=lambda _: page.go(f"/lesson/{router.index}")),
+                            createfloatingButton('Lesson',ft.icons.BOOK,backToLesson),
                         ],
+                        #scroll=True,
+                        horizontal_alignment=ft.CrossAxisAlignment.CENTER,
+                        vertical_alignment= ft.MainAxisAlignment.CENTER,
+                        #padding= ft.padding.symmetric(10,40)
                     )
                 )
                 

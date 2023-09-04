@@ -80,7 +80,7 @@ class LessonView():
 
 
 # works for lesson view
-def appBar(view, updateMarkDownFunction,index_from_quiz=None):
+def lessonAppBar(view, updateMarkDownFunction,index_from_quiz=None):
 
     header_title = ft.Text("JAVASCRIPT TUTORIALS",size="30")
     LEFT_ICON_BTN = ft.IconButton(ft.icons.ARROW_LEFT)
@@ -234,7 +234,7 @@ def appBar(view, updateMarkDownFunction,index_from_quiz=None):
         leading_width=70,
         title=header_title,
         center_title=False,
-        bgcolor=ft.colors.GREY_200,
+        bgcolor=ft.colors.SURFACE_VARIANT,
         toolbar_height=74.0,
         actions=[
             LEFT_ICON_BTN,
@@ -312,9 +312,9 @@ def introPage(page:ft.Page):
     )
 
 
-def createfloatingButton(floating_text:str, clickAction=None) -> ft.FloatingActionButton:
+def createfloatingButton(floating_text:str, icon= None, clickAction=None) -> ft.FloatingActionButton:
     float_button = ft.FloatingActionButton(
-        icon=ft.icons.CODE_OUTLINED,
+        icon=icon,
         on_click=clickAction,
         bgcolor="#cbbbe8",##5B9CDE",
         shape=ft.RoundedRectangleBorder(
