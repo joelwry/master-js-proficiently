@@ -32,7 +32,7 @@ class LessonView():
             text="Quiz",
             mini=True)
 
-        col = ft.Column([self.markdown], height=600, scroll="AUTO")
+        col = ft.Column([self.markdown], height=600, scroll="AUTO",on_scroll=self.whenMarkDownContentIsScrolled)
         self.row = ft.ResponsiveRow(
             [
                 ft.Column([
@@ -78,11 +78,18 @@ class LessonView():
         self.readFileContent(file_path)
         self.markdown.value = self.code
 
-
+    def whenMarkDownContentIsScrolled(self,e):
+        
+        if e.pixels == e.max_scroll_extent :
+            self.float_button.visible = False
+        else :
+            self.float_button.visible = True
+        
+        self.view.update()
 # works for lesson view
 def lessonAppBar(view, updateMarkDownFunction,index_from_quiz=None):
 
-    header_title = ft.Text("JAVASCRIPT TUTORIALS",size="30")
+    header_title = ft.Text("JS Lesson",size="26")
     LEFT_ICON_BTN = ft.IconButton(ft.icons.ARROW_LEFT)
     RIGHT_ICON_BTN = ft.IconButton(ft.icons.ARROW_RIGHT)
     
@@ -230,7 +237,7 @@ def lessonAppBar(view, updateMarkDownFunction,index_from_quiz=None):
 
     #COLORS : PRIMARY_CONTAINER,AMBER_100
     view.appbar = ft.AppBar(
-        leading=ft.IconButton(ft.icons.MENU),
+        leading=leftSidePopMenuItemsForAppBar(),
         leading_width=70,
         title=header_title,
         center_title=False,
@@ -326,6 +333,36 @@ def createfloatingButton(floating_text:str, icon= None, clickAction=None) -> ft.
     return float_button
 
 def createGeneralAppBar(page_title : str) -> ft.AppBar :
-    app_bar = ft.AppBar(title=ft.Text(page_title), bgcolor=ft.colors.SURFACE_VARIANT,toolbar_height=74.0,leading=ft.IconButton(ft.icons.MENU),
+    app_bar = ft.AppBar(title=ft.Text(page_title), bgcolor=ft.colors.SURFACE_VARIANT,toolbar_height=74.0,leading=leftSidePopMenuItemsForAppBar(),
         leading_width=70)
     return app_bar
+#leading=ft.IconButton(ft.icons.MENU)
+
+def leftSidePopMenuItemsForAppBar():
+    def check_item_clicked(e):
+        e.control.checked = not e.control.checked
+        e.control.page.update()
+
+    pb = ft.PopupMenuButton(
+        icon = ft.icons.MENU,
+        items=[
+            ft.PopupMenuItem(text="Item 1"),
+            ft.PopupMenuItem(icon=ft.icons.POWER_INPUT, text="Check power"),
+            ft.PopupMenuItem(
+                content=ft.Row(
+                    [
+                        ft.Icon(ft.icons.HOURGLASS_TOP_OUTLINED),
+                        ft.Text("Item with a custom content"),
+                    ]
+                ),
+                on_click=lambda _: print("Button with a custom content clicked!"),
+            ),
+            ft.PopupMenuItem(),  # divider
+            ft.PopupMenuItem(
+                text="Checked item", checked=False, on_click=check_item_clicked
+            ),
+        ]
+    )
+    
+    return pb
+     
